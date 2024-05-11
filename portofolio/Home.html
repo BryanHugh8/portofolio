@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan's Portofolio</title>
+    <link rel="stylesheet" href="homeStyle.css">
+    <link rel="icon" href="assets/logo-no-background.png">
+</head> 
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <label class="logo"><img src="assets/logo-no-background.png" alt=""></label>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="hello-text">
+                <p>Front-End Developer</p>
+                <h1><span class="hello">Hello</span>, I'm <br>Bryan Hugh Giovandi</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/aboutPhoto.png" alt="aboutPhoto">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-me">About Me</h1>
+                    <p>
+                        I'm an undergraduate student pursuing a degree in computer science. My passion is to create innovative mobile applications.
+                        My journey begins on high school, realizing how important softwares are in helping human lives. Driven by curiosity, I continued my journey
+                        in the world of software development, enhancing experiences and skills, pushing through every boundaries and challenges met. 
+                        Throughout my academic journey, I've had the privilege of working on diverse range of project, each with it's own unique challenges and
+                        growth opportunities. From designing intuitive user interfaces to implementing robust backend systems, developing software have also made me realize
+                        how important teamwork is. Beyond the technical skills I have, I pride myself on having great communication and teamworking skills.
+                        I believe communication and teamworking skills is one of the most important aspect when developing a software. Ensuring user goals and needs are fulfilled.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="openTab('skills')" >Skills</p>
+                        <p class="tab-link" onclick="openTab('experiences')">Experiences</p>
+                        <p class="tab-link" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skills">
+                        <div class="skills-content">
+                            <div class="skills-list-container">
+                                <h2>Technical skills</h2>
+                                <div class="tech-skills-list">
+                                    <ul>
+                                        <li>Swift</li>
+                                        <li>Flutter</li>
+                                        <li>Python</li>
+                                        <li>C</li>
+                                        <li>C++</li>
+                                        <li>C#</li>
+                                        <li>SQL</li>
+                                        <li>Java</li>
+                                        <li>React Native</li>
+                                        <li>ASP.NET</li>
+                                        <li>HTML/CSS/JS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skills-list-container">
+                                <h2>Design and Media Platform Skills</h2>
+                                <div class="language-skills-list">
+                                    <ul>
+                                        <li>Figma</li>
+                                        <li>Sketch</li>
+                                        <li>Canva</li>
+                                        <li>Adobe Photoshop</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skills-list-container">
+                                <h2>Language Skills</h2>
+                                <div class="language-skills-list">
+                                    <ul>
+                                        <li>Indonesian - Native</li>
+                                        <li>English - Fluent</li>
+                                        <li>Chinese - Fluent</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="experiences">
+                        <div class="skills-content">
+                            <div class="skills-list-container">
+                                <h2>Technical Experiences</h2>
+                                <br>
+                                <div class="tech-exp-list">
+                                    <ul>
+                                        <p>2023</p>
+                                        <li>iOS Foundation Cohort 18 - Apple Developer Academy</li>
+                                        <br>
+                                        <p>2024</p>
+                                        <li>Samsung Innovation Campus - AI, IoT, C&P Bootcamp</li>
+                                        <br>
+                                        <p>2023</p>
+                                        <li>Beelingua Tutor - BINUS University</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="skills-list-container">
+                                <h2>Organizational Experiences</h2>
+                                <br>
+                                <div class="org-exp-list">
+                                    <ul>
+                                        <p>2020-2021</p>
+                                        <li>Student Council Vice Chairman - Pelangi Kasih School</li>
+                                        <br>
+                                        <p>2021-2022</p>
+                                        <li>Student Council Chairman - Pelangi Kasih School</li>
+                                        <br>
+                                        <p>2023</p>
+                                        <li>Sponsorship Division Vice Coordinator - TECHNO 2023 - HIMTI Bina Nusantara</li>
+                                        <br>
+                                        <p>2024</p>
+                                        <li>Sponsorship Advisor - TECHNO 2024 - HIMTI Bina Nusantara</li>
+                                        <br>
+                                        <p>2024</p>
+                                        <li>Google Developer Student Clubs - Bina Nusantara University</li>
+                                        <br>
+                                        <p>2024</p>
+                                        <li>KMK BINUS University</li>
+                                        <br>
+                                        <p>2023-2024</p>
+                                        <li>Freshmen Partner - Bina Nusantara University</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <div class="skills-left">
+                            <div class="education">
+                              <div class="line">
+                                <div></div>
+                              </div>
+                              <div class="education-info">
+                                <h4 class="education-title">Bina Nusantara University</h4>
+                                <p>Bachelor's Degree - Computer Science</p>
+                                <h4 class="education-years">2022 - 2026</h4>
+                              </div>
+                            </div>
+                            <div class="education">
+                              <div class="line">
+                                <div></div>
+                              </div>
+                              <div class="education-info">
+                                <h4 class="education-title">Pelangi Kasih School</h4>
+                                <p>High School - Science Stream</p>
+                                <h4 class="education-years">2020 - 2022</h4>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/taskmate.png" alt="">
+                    <div class="layer">
+                        <h3>To Do List App</h3>
+                        <p>An iOS based application that will help students organize their schedule through an easy to-do list</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/VhoTel.png" alt="">
+                    <div class="layer">
+                        <h3>Hotel Information and Reservation Website</h3>
+                        <p>A responsive html/css/js based website, made for hotel reservation, facilities, and informations</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/bika.png" alt="">
+                    <div class="layer">
+                        <h3>Binus Canteen website</h3>
+                        <p>A HTML/CSS/JS based website for ordering foods from BINUS Canteen</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/StuddyBuddy.png" alt="">
+                    <div class="layer">
+                        <h3>Study Buddy Finder Application</h3>
+                        <p>A React based application for study buddy finding based on location</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> bryanhugh8@gmail.com</p>
+                    <p><a href="https://www.instagram.com/bryan.hugh/"><i class="fa-brands fa-instagram"></i></a> bryan.hugh</p>
+                    <p><i class="fa-brands fa-line"></i>bryan.hugh</p>
+                    <p><i class="fa-solid fa-phone"></i>087780932198</p>
+                    <p><i class="fa-brands fa-whatsapp"></i>087780932198</p>
+                    <a href="assets/BryanHughGiovandi_CV_Academy.docx" download class="btn btn2">Download CV</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="email" name="Email" placeholder="Email Address" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" onclick="submittedAlert()">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="homeScript.js"></script>
+    <script src="https://kit.fontawesome.com/d79c9bd720.js" crossorigin="anonymous"></script>
+</body>
+</html>
