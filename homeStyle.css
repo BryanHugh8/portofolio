@@ -315,6 +315,9 @@ nav ul li a:hover{
     font-size: 25px;
 }
 
+.fa-instagram:hover, .fa-whatsapp:hover, .fa-linkedin:hover{
+    color:#205b97
+}
 .btn{
     display: block;
     margin: 50px auto;
@@ -370,7 +373,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url();
+        background-image: url(assets/photoresp.png);
     }
 
     .hello-text{
