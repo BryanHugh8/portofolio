@@ -1,6 +1,37 @@
 var tablinks = document.getElementsByClassName("tab-link");
 var tabcontents = document.getElementsByClassName("tab-content");
 var sidemenu = document.getElementById("side-menu");
+const roleTextElement = document.getElementById("role-text");
+const nameTextElement = document.getElementById("name-text");
+const roles = ["Front-End Developer", "Undergraduate Computer Science Student"];
+let roleIndex = 0;
+let roleCharIndex = 0;
+const typingSpeed = 100;
+const rolePause = 2000;
+
+function typeRole() {
+    if (roleCharIndex < roles[roleIndex].length) {
+        roleTextElement.textContent += roles[roleIndex].charAt(roleCharIndex);
+        roleCharIndex++;
+        setTimeout(typeRole, typingSpeed);
+    } else {
+        setTimeout(deleteRole, rolePause);
+    }
+}
+
+function deleteRole() {
+    if (roleCharIndex > 0) {
+        roleTextElement.textContent = roles[roleIndex].substring(0, roleCharIndex - 1);
+        roleCharIndex--;
+        setTimeout(deleteRole, typingSpeed);
+    } else {
+        roleIndex = (roleIndex + 1) % roles.length;
+        setTimeout(typeRole, typingSpeed);
+    }
+}
+
+// Call functions to start typing animations
+typeRole();
 
 function openTab(tab){
     for(tabl of tablinks){
@@ -11,7 +42,7 @@ function openTab(tab){
         tabc.classList.remove("active-tab");
     }
 
-    event.currentTarget.classList.add("active-link");
+    event.currentTarget.classList.add("active-link");   
     document.getElementById(tab).classList.add("active-tab");
 }
 

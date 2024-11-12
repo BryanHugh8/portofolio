@@ -91,6 +91,22 @@ nav ul li a:hover{
 .hello{
     color:#41a0ff;
 }
+.typing-text {
+    display: inline-block;
+    border-right: 2px solid #41a0ff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(20, end), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
 
 .logo-color{
     color:#41a0ff;
